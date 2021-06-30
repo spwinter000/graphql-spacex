@@ -1,7 +1,8 @@
 import { gql } from "@apollo/client";
 
 export const GET_LAUNCHES_QUERY = gql`
-query launchesPast(limit: 10) {
+query launchesPast($limit: Int!) {
+  launchesPast(limit: $limit) {
       id
       mission_name
       links {
@@ -13,4 +14,19 @@ query launchesPast(limit: 10) {
       }
       launch_date_utc
     }
+  }
+`
+
+export const GET_LAUNCH_DETAILS_QUERY = gql`
+query launch($id: Int!) {
+  launch(id: $id) {
+    mission_name
+    details
+    links {
+      flickr_images
+      mission_patch
+    }
+    id
+  }
+}
 `

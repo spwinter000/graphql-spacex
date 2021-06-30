@@ -1,0 +1,15 @@
+#launch-list-container{
+    /* display: inline-block; */
+}
+
+#launch-container{
+    /* display: fe; */
+    border: 1px solid gray;
+    height: 371px;
+    width: 500px;
+}
+
+.patch{
+    height: 256px;
+    width: 256px;
+}
