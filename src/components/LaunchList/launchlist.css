@@ -1,15 +1,22 @@
 #launch-list-container{
-    /* display: inline-block; */
+    display: inline-block;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
 }
 
 #launch-container{
     /* display: fe; */
     border: 1px solid gray;
     height: 371px;
-    width: 500px;
+    width: 350px;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
 }
 
 .patch{
-    height: 256px;
-    width: 256px;
+    height: 100px;
+    width: 100px;
 }

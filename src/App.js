@@ -1,5 +1,7 @@
 import './App.css';
+import { Route, Switch, Redirect, Link } from "react-router-dom";
 import LaunchList from './components/LaunchList/LaunchList';
+import LaunchDetails from './components/LaunchDetails/LaunchDetails';
 import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client';
 // import { onError } from "@apollo/client/link/error";
 
@@ -19,9 +21,14 @@ function App() {
   })
 
   return (
-    <ApolloProvider client={client}>
-      <LaunchList />
-    </ApolloProvider>
+    <div>
+      <ApolloProvider client={client}>
+        <Switch>
+          <Route exact path="/" component={LaunchList}/>
+          <Route exact path="/:id" component={LaunchDetails}/>
+        </Switch>
+      </ApolloProvider>
+    </div>
   );
 }
 

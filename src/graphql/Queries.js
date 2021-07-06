@@ -18,8 +18,9 @@ query launchesPast($limit: Int!) {
 `
 
 export const GET_LAUNCH_DETAILS_QUERY = gql`
-query launch($id: Int!) {
+query launch($id: ID!) {
   launch(id: $id) {
+    id
     mission_name
     details
     links {
