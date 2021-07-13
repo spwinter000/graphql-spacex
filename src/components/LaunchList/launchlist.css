@@ -1,22 +1,63 @@
+.title{
+    margin-left: 15%;
+}
+
+.dropdown{
+    margin-left: 15%;
+    margin-bottom: 5px;
+}
+
+.dropdown label{
+    margin-right: 5px;
+}
+
 #launch-list-container{
     display: inline-block;
+    margin-left: 15%;
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
 }
 
 #launch-container{
-    /* display: fe; */
     border: 1px solid gray;
-    height: 371px;
+    margin-right: 10px;
+    margin-bottom: 10px; 
+    /* box-shadow: 0 0 20px rgba(134, 134, 134, 0.2);  */
+    height: 325px;
     width: 350px;
     vertical-align: top;
     display: inline-block;
-    *display: inline;
-    zoom: 1
+    /* *display: inline; */
+    zoom: 1;
 }
 
+#launch-container:hover{
+    box-shadow: 0 0 20px rgba(134, 134, 134, 0.4);
+}
+
+
 .patch{
-    height: 100px;
-    width: 100px;
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+#mission-name{
+    text-decoration: none;
+    color: black;
+    line-height: 50px;
+    /* margin-bottom: 10px; */
+}
+
+#mission-name, .patch{
+    display:inline;
+}
+
+.launch-thumbnail{
+    display: block;
+    margin-left: 5px;
+    height: 200px;
+    width: 200px;
 }

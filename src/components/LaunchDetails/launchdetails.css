@@ -1,0 +1,12 @@
+.details-div{
+    /* border: 1px solid black; */
+    /* text-align: center; */
+    width: 100%;
+}
+
+.details-div-inner{
+    /* border: 1px solid black; */
+    width: 50%;
+    text-align: justify;
+    margin-left: 25%;
+}
